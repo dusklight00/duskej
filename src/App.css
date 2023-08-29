@@ -47,7 +47,7 @@
 
 /* Style the text input for tag name editing */
 input[type="text"] {
-  border: none;
+  /* border: none; */
   outline: none;
   padding: 2px;
   font-size: inherit;
@@ -67,4 +67,9 @@ button {
 button:last-child {
   margin-top: 20px;
   background-color: #2196f3;
+}
+
+.data {
+  display: flex;
+  
 }
