@@ -1,38 +1,70 @@
+/* App.css */
+
+/* Add basic styling to the main application container 
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}*/
+.App {
+  max-width: 100vw; /* 100% of the viewport width */
+  margin: 0 auto; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the tag container */
+.tag {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Style the tag header */
+.tag-header {
+  display: flex;
+  align-items: center;
+}
+
+.collapse {
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.tag-name {
+  cursor: pointer;
+  flex-grow: 1;
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Style the text input for tag name editing */
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 2px;
+  font-size: inherit;
+  width: 100%;
+}
+
+/* Style the "Add Child" button */
+button {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the "Export" button */
+button:last-child {
+  margin-top: 20px;
+  background-color: #2196f3;
 }
